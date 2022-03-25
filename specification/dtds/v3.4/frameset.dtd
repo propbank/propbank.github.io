@@ -36,14 +36,14 @@
   and something like 47.2 means 47.2 is a levine class of this
   roleset.  The list of levine classes is space delimited
 -->
-<!ELEMENT roleset (aliases?, note*, roles, usagenotes*, ( lexlinks | example | note )*)>
+<!ELEMENT roleset (aliases?, note*, roles, usagenotes*, ( lexlinks | example | note | entailments)*)>
 <!ATTLIST roleset
   id   CDATA #REQUIRED
   name CDATA #IMPLIED>
 <!ELEMENT aliases (alias | argalias| mwp-descriptions)*>
 <!ELEMENT alias (#PCDATA)>
 <!ATTLIST alias
-pos (r | p | v | n | j | l | x| m) #REQUIRED>
+pos (r | p | v | n | j | l | x | m | d | f) #REQUIRED>
 
 
 <!--
@@ -56,9 +56,11 @@ pos (r | p | v | n | j | l | x| m) #REQUIRED>
   v = Verb
   n = Noun
   j = Adjective
-  l = (MISSING IDK)
-  x = (MISSING IDK)
-  m = (MISSING IDK)
+  l = Light verb constructions
+  x = Predicating prepositional phrases
+  m = Multiword Expressions
+  d = Determiners
+  f = Affixes 
 
 -->
 
@@ -93,37 +95,39 @@ dep CDATA #REQUIRED >
 <!ELEMENT target (#PCDATA)>
 
 <!ELEMENT roles   (note | role)*>
-<!ELEMENT role (rolelinks)* >
+<!ELEMENT role (rolelinks | roleusagenotes)* >
 <!--
   roles have a number (or an "M" associated
   with them, for common adjuncts that don't qualify for number argument status). 
   Both numbered arguments and adjuncts are labeled with the function tags from the list below:
 
-    EXT  extent
-    LOC  location
-    DIR  direction
-    NEG  negation  (not in PREDITOR)
-    MOD  general modification
-    ADV  adverbial modification
-    MNR  manner
-    PRD  secondary predication
-    REC  recipricol (eg herself, etc)
-    TMP  temporal
-    PRP  purpose
-    PNC  purpose no cause (no longer used)
-    CAU  cause
-    CXN  constructional pattern (adjectival comparative marker)
     ADJ  adjectival (nouns only)
+    ADV  adverbial modification
+    CAU  cause
     COM  comitative
+    CXN  constructional pattern (adjectival comparative marker)
+    DIR  direction
     DIS  discourse
     DSP  direct speech
+    EXT  extent
     GOL  goal
-    PAG  prototypical agent (function tag for arg1)
-    PPT  prototypical patient (function tag for arg1)
-    RCL  relative clause (no longer used)
-    SLC  selectional constraint link
-    VSP  verb specific (function tag for numbered arguments)
+    LOC  location
     LVB  light verb (for nouns only)
+    MNR  manner
+    MOD  general modification
+    NEG  negation  (not in PREDITOR)
+    ORG  orientation
+    PAG  prototypical agent (function tag for arg1)
+    PNC  purpose no cause (no longer used)
+    PPT  prototypical patient (function tag for arg1)
+    PRD  secondary predication
+    PRP  purpose
+    RCL  relative clause (no longer used)
+    REC  recipricol (eg herself, etc)
+    SLC  selectional constraint link
+    TMP  temporal
+    VSP  verb specific (function tag for numbered arguments)
+
     
     #
     # Function tags for spatial arguments
@@ -175,8 +179,8 @@ dep CDATA #REQUIRED >
 
 -->
 <!ATTLIST role
-  n ( 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | m | M ) #REQUIRED
-  f ( ANC | ANC1 | ANC2 | ANG | DOM | AXS | AXSp | AXSc | AXS1 | AXS2 | WHL | SEQ | SET | SRC | PRT | SE1 | SE2 | SE3 | SE4 | SE5 | SE6 | SCL | PAG | PPT | GOL | CXN | VSP | COM | ADJ | CAU | PRP | MNR | EXT | LOC | REC | DIR | ADV | TMP | adv | tmp | pag | ppt | gol | vsp | com | adj | cau | prp | rec | mnr | ext | loc | dir | prd | PRD ) #REQUIRED
+  n ( 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | m | M | x | y | z | FR | orientation | range-start | range-trajectory | axis | framework | op1 | rise | rotation | run | unit | value ) #REQUIRED
+  f ( ANC | ANC1 | ANC2 | ANG | DOM | AXS | AXSx | AXSy | AXSz | AXSp | AXSc | AXS1 | AXS2 | ORT | ORGN | WHL | SEQ | SET | SRC | SE1 | SE2 | SE3 | SE4 | SE5 | SE6 | SE7 | SE8 | SE9 | SCL | PAG | PLN | PLN1 | PLN2 | PPT | PRT | PRT1 | PRT2 | GOL | CXN | VSP | COM | ADJ | CAU | PRP | MNR | EXT | LOC | REC | DIR | ADV | TMP | adv | tmp | pag | ppt | gol | vsp | com | adj | cau | prp | rec | mnr | ext | loc | dir | prd | PRD ) #REQUIRED
   descr CDATA #REQUIRED>
 
 <!ELEMENT rolelinks (rolelink)*>
@@ -193,6 +197,7 @@ resource CDATA #REQUIRED
   resource CDATA #REQUIRED
   version CDATA #REQUIRED
     inuse  CDATA #REQUIRED>
+
 
 <!ELEMENT lexlinks (lexlink)*>
 <!ELEMENT lexlink (#PCDATA)>
@@ -212,10 +217,10 @@ resource CDATA #REQUIRED
 -->
 
 <!-- Adding a new element to distinguish propbank example from amr example (UNVERIFIED) -->
-<!ELEMENT pb (arg|rel|note)*> 
+<!ELEMENT propbank (arg|rel|note)*> 
 
 <!-- <!ELEMENT example (note?, text, (pb | amr | note)*)> -->
-<!ELEMENT example (note?, text, (arg | rel | pb | amr | note)*)>  <!-- Eventually might want to remove (arg|rel) elements which are currently kept for purposes of backward compatibility -->
+<!ELEMENT example (note?, text, (arg | rel | propbank | amr | note)*)>  <!-- Eventually might want to remove (arg|rel) elements which are currently kept for purposes of backward compatibility -->
 <!ATTLIST example
   name CDATA #IMPLIED
   src  CDATA #IMPLIED>
@@ -225,10 +230,10 @@ resource CDATA #REQUIRED
      described above -->
 <!ELEMENT arg (#PCDATA)>
 <!ATTLIST arg
-  n ( 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | m | M | a | A) #REQUIRED
-  f CDATA #IMPLIED
-      start CDATA #IMPLIED
-        end CDATA #IMPLIED>
+ type (ARG0 | ARG1 | ARG2 | ARG3 | ARG4 | ARG5 | ARG6 | ARGM-ADJ | ARGM-ADV | ARGM-ANC | ARGM-ANC1 | ARGM-ANC2 | ARGM-ANG | ARGM-AXS | ARGM-AXS1 | ARGM-AXS2 | ARGM-AXSc | ARGM-AXSp | ARGM-CAU | ARGM-COM | ARGM-CXN | ARGM-DIR | ARGM-DIS | ARGM-DOM | ARGM-DSP | ARGM-EXT | ARGM-GOL | ARGM-LOC | ARGM-LVB | ARGM-MNR | ARGM-MOD | ARGM-NEG | ARGM-PAG | ARGM-PLN | ARGM-PLN1 | ARGM-PLN2 | ARGM-PNC | ARGM-PPT | ARGM-PRD | ARGM-PRP | ARGM-PRR | ARGM-PRT | ARGM-PRT1 | ARGM-PRT2 | ARGM-REC | ARGM-SCL | ARGM-SE1 | ARGM-SE2 | ARGM-SE3 | ARGM-SE4 | ARGM-SE5 | ARGM-SE6 | ARGM-SEQ | ARGM-SET | ARGM-SRC | ARGM-TMP | ARGM-VSP | ARGM-WHL | R-ARG0 | R-ARG1 | R-ARG2 | R-ARG3 | R-ARG4 | R-ARG5 | R-ARG6 | R-ARGM-ADJ | R-ARGM-ADV | R-ARGM-ANC | R-ARGM-ANC1 | R-ARGM-ANC2 | R-ARGM-ANG | R-ARGM-AXS | R-ARGM-AXS1 | R-ARGM-AXS2 | R-ARGM-AXSc | R-ARGM-AXSp | R-ARGM-CAU | R-ARGM-COM | R-ARGM-CXN | R-ARGM-DIR | R-ARGM-DIS | R-ARGM-DOM | R-ARGM-DSP | R-ARGM-EXT | R-ARGM-GOL | R-ARGM-LOC | R-ARGM-LVB | R-ARGM-MNR | R-ARGM-MOD | R-ARGM-NEG | R-ARGM-PAG | R-ARGM-PLN | R-ARGM-PLN1 | R-ARGM-PLN2 | R-ARGM-PNC | R-ARGM-PPT | R-ARGM-PRD | R-ARGM-PRP | R-ARGM-PRR | R-ARGM-PRT | R-ARGM-PRT1 | R-ARGM-PRT2 | R-ARGM-REC | R-ARGM-SCL | R-ARGM-SE1 | R-ARGM-SE2 | R-ARGM-SE3 | R-ARGM-SE4 | R-ARGM-SE5 | R-ARGM-SE6 | R-ARGM-SEQ | R-ARGM-SET | R-ARGM-SRC | R-ARGM-TMP | R-ARGM-VSP | R-ARGM-WHL | C-ARG0 | C-ARG1 | C-ARG2 | C-ARG3 | C-ARG4 | C-ARG5 | C-ARG6 | C-ARGM-ADJ | C-ARGM-ADV | C-ARGM-ANC | C-ARGM-ANC1 | C-ARGM-ANC2 | C-ARGM-ANG | C-ARGM-AXS | C-ARGM-AXS1 | C-ARGM-AXS2 | C-ARGM-AXSc | C-ARGM-AXSp | C-ARGM-CAU | C-ARGM-COM | C-ARGM-CXN | C-ARGM-DIR | C-ARGM-DIS | C-ARGM-DOM | C-ARGM-DSP | C-ARGM-EXT | C-ARGM-GOL | C-ARGM-LOC | C-ARGM-LVB | C-ARGM-MNR | C-ARGM-MOD | C-ARGM-NEG | C-ARGM-PAG | C-ARGM-PLN | C-ARGM-PLN1 | C-ARGM-PLN2 | C-ARGM-PNC | C-ARGM-PPT | C-ARGM-PRD | C-ARGM-PRP | C-ARGM-PRR | C-ARGM-PRT | C-ARGM-PRT1 | C-ARGM-PRT2 | C-ARGM-REC | C-ARGM-SCL | C-ARGM-SE1 | C-ARGM-SE2 | C-ARGM-SE3 | C-ARGM-SE4 | C-ARGM-SE5 | C-ARGM-SE6 | C-ARGM-SEQ | C-ARGM-SET | C-ARGM-SRC | C-ARGM-TMP | C-ARGM-VSP | C-ARGM-WHL) #REQUIRED
+ start CDATA #IMPLIED
+ end CDATA #IMPLIED>
+
 <!-- a rel can have an "f" attribute for a single reason, so that
      auxilliary uses of the verb "have" can be marked as such.
      There should be no other "f" attributes -->
@@ -237,3 +242,12 @@ resource CDATA #REQUIRED
   relloc CDATA #REQUIRED>
 
 <!ELEMENT amr (#PCDATA)>
+<!ATTLIST amr
+ version CDATA #REQUIRED>
+
+
+<!ELEMENT hobbsian (#PCDATA)>
+<!ELEMENT entailments (hobbsian)>
+
+
+
