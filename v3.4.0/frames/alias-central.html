@@ -1,0 +1,134 @@
+<html lang="en"><head><title>Rolesets for alias "central"</title><link rel="stylesheet" href="style.css"></head><body><div class="wrapper"><div class="header">Aliases - central</div><div class="headerMenu"><select id="resource" style="font-size:30px;float:left;"><option value="ALL">All Frames</option><option value="AMR_2019">AMR 2019</option><option value="PropBank_1-0">PropBank 1.0</option><option value="PropBank_2-1-5">PropBank 2.1.5</option><option value="PropBank_3-1">PropBank 3.1</option><option value="PropBank_3-4">PropBank 3.4</option><option value="PropBank_Flickr_1-0">PropBank Flickr 1.0</option></select><form autocomplete="off" method="post" name="aliasSearch" style="float:right;"><div class="autocomplete"><input id="searchAliases" name="myAlias" placeholder="Alias" type="text"></div><input type="submit" value="Search"></form><form autocomplete="off" method="post" name="rolesetSearch" style="margin:0 auto;width:300px"><div class="autocomplete"><input id="searchRolesets" name="myRoleset" placeholder="Roleset ID" type="text"></div><input type="submit" value="Go"></form></div><div class="sidebar"><div class="sticky-spacer"></div><div class="sticky-content"><a href="index.html">&#11178; Index</a></div></div><div class="content"><div class="sticky-spacer"></div><div class="sticky-content"><div class="roleset resource-dependent PropBank_1-0 PropBank_2-1-5 PropBank_3-1 PropBank_3-4 AMR_2019 PropBank_Flickr_1-0"><a id="center.01"></a><h3>center.01 - <i>focus on; cause the centerpoint of one entity to align with the centerpoint of another entity</i></h3><span style="font-size:10px;">CENTER NOTES: Updated for Spatial AMR; part/whole "the center" split off.</span><br><span style="font-size:10px;">CENTER-V NOTES: Frames file for 'center' based on sentences in wsj; adjectival 'centered' found in BOLT-7. Member of VNcls focus-87.1. (from center.01-v)</span><br><span style="font-size:10px;">CENTERED-J NOTES: Added by Julia based on SHARP-SRED (from centered.01-j)</span><br><h4>Aliases:</h4><div style="padding-left: 20px;"><span>center (v.)</span><br><span>centered (j.)</span><br><span>central (j.)</span><br></div><h4>Roles:</h4><div style="padding-left: 20px;"><span><span style="background-color:AQUAMARINE">ARG0-PAG</span><span>: </span><i>agent</i></span><br><span><span style="background-color:PALEGREEN">ARG1-SE1</span><span>: </span><i>thing centered</i></span><br><span><span style="background-color:PLUM">ARG2-SE2</span><span>: </span><i>centered on</i></span><br></div><div class="example"><h4>center-v</h4><div><div class="tooltip"><span style="background-color: LIGHTCORAL">Center</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PALEGREEN">the stack of 8</span><span class="tooltiptext">ARG1</span></div> <div class="tooltip"><span style="background-color: PLUM">on the other axis</span><span class="tooltiptext">ARG2</span></div> <br><br><pre>          (c / center-01 :mode imperative
+            :ARG0 (y / you)
+            :ARG1 (s / stack
+              :size (d / dimension-entity :value 8))
+            :ARG2 (a / axis
+              :ARG1-of (o / other-01)))
+        </pre></div></div><div class="example"><h4>center-v: normal usage</h4><div><div class="tooltip"><span style="background-color: PALEGREEN">Speculation on his successor</span><span class="tooltiptext">ARG1</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">centers</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">on a number of division heads at the house</span><span class="tooltiptext">ARG2</span></div> <span>.</span><br><br><pre>          (c / center-01
+            :ARG1 (s / speculate-01
+              :ARG2 (p / person
+                :ARG0-of (s2 / succeed-02
+                  :ARG1 (h / he))))
+            :ARG2 (p2 / person
+              :quant (n / number)
+              :ARG0-of (h2 / have-org-role-91
+                :ARG1 (g / government-organization :name (n2 / name :op1 "house"))
+                :ARG2 (h3 / head-01
+                  :ARG1 (d / division)))))
+        </pre></div></div><div class="example"><h4>center-v: around variant</h4><div><div class="tooltip"><span style="background-color: PALEGREEN">Japan 's objections to the U.S. plan</span><span class="tooltiptext">ARG1</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">center</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">around its desire to stay self - sufficient in rice , a staple food , even though foreign producers are far more efficient</span><span class="tooltiptext">ARG2</span></div> <span>.</span><br><br><pre>          (c / center-01
+            :ARG1 (o / object-01
+              :ARG0 (c2 / country :wiki "Japan" :name (n / name :op1 "Japan"))
+              :ARG1 (t / thing
+                :ARG1-of (p / plan-01
+                  :ARG0 (c3 / country :wiki "United_States" :name (n2 / name :op1 "U.S.")))))
+            :ARG2 (d / desire-01
+              :ARG0 c2
+              :ARG1 (s / stay-01
+                :ARG1 c2
+                :ARG3 (s2 / suffice-01
+                  :ARG0 (r / rice
+                    :domain (f / food
+                      :mod (s3 / staple)))
+                  :ARG1 c2)))
+            :concession (h / have-degree-91
+              :ARG1 (o2 / organization
+                :ARG0-of (p2 / produce-01)
+                :mod (f2 / foreign))
+              :ARG2 (e / efficient-01
+                :ARG1 o2)
+              :ARG3 (m / more
+                :degree (f3 / far))))
+        </pre></div></div><div class="example"><h4>center-v: in variant</h4><div><span>The </span><span>size </span><span>of </span><span>the </span><span>cuts </span><span>is </span><span>n't </span><span>known </span><span>, </span><span>but </span><div class="tooltip"><span style="background-color: PALEGREEN">they</span><span class="tooltiptext">ARG1</span></div> <div class="tooltip"><span style="background-color: GAINSBORO">'ll</span><span class="tooltiptext">ARGM-MOD</span></div> <span>be </span><div class="tooltip"><span style="background-color: LIGHTCORAL">centered</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">in the exploration and production division , which is responsible for locating oil reserves , drilling wells and pumping crude oil and natural gas</span><span class="tooltiptext">ARG2</span></div> <span>.</span><br><br><pre>          (c / contrast-01
+            :ARG1 (k / know-01 :polarity -
+              :ARG1 (h / have-size-91
+                :ARG1 (t / thing
+                  :ARG2-of (c2 / cut-02))))
+            :ARG2 (c3 / center-01
+              :ARG1 c2
+              :ARG2 (d / division
+                :ARG0-of (e / explore-01)
+                :ARG0-of (p / produce-01)
+                :ARG0-of (r / responsible-03
+                  :ARG1 (a / and
+                    :op1 (l / locate-01
+                      :ARG0 d
+                      :ARG1 (r2 / reserve :pl +
+                        :mod (o / oil)))
+                    :op2 (d2 / drill-01
+                      :ARG0 d
+                      :ARG4 (w / well :pl +))
+                    :op3 (p2 / pump-01
+                      :ARG0 d
+                      :ARG2 (a2 / and
+                        :op1 (o2 / oil
+                          :mod (c4 / crude))
+                        :op2 (g / gas
+                          :ARG1-of (n / natural-03)))))))))
+        </pre></div></div><div class="example"><h4>center-v: agentive</h4><div><span>In </span><div class="tooltip"><span style="background-color: LIGHTCORAL">centering</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">on the disruption of a few proud local customs such as the historic homes tour and the damage to the antiquities</span><span class="tooltiptext">ARG2</span></div> <span>, </span><div class="tooltip"><span style="background-color: AQUAMARINE">your reporter</span><span class="tooltiptext">ARG0</span></div> <span>served </span><span>to </span><span>only </span><span>perpetuate </span><span>an </span><span>outdated </span><span>and </span><span>stereotypically </span><span>provincial </span><span>view </span><span>of </span><span>this </span><span>otherwise </span><span>thriving </span><span>port </span><span>city </span><span>.</span><br><br><pre>          (s / serve-01
+            :ARG0 (p / person
+              :ARG0-of (r / report-01)
+              :ARG0-of (h / have-rel-role-91
+                :ARG1 (y / you)))
+            :ARG1 (p2 / perpetuate-01
+              :ARG0 p
+              :ARG1 (v / view-02
+                :ARG1 (c / city
+                  :ARG1-of (t / thrive-01
+                    :ARG2-of (e / except-01))
+                  :mod (p3 / port))
+                :ARG2 (t2 / thing
+                  :mod (o2 / outdated)
+                  :mod (p4 / provincial
+                    :ARG1-of (s2 / stereotypic-02
+                      :ARG2 c))))
+              :mod (o / only))
+            :manner (c2 / center-01
+              :ARG0 p
+              :ARG2 (a / and
+                :op1 (d / disrupt-01
+                  :ARG1 (c3 / custom :pl +
+                    :quant (f / few)
+                    :ARG1-of (l / local-02)
+                    :ARG1-of (p5 / pride-01)
+                    :example (t3 / tour-01
+                      :ARG1 (h2 / home :pl +
+                        :mod (h3 / historic)))))
+                :op2 (d2 / damage-01
+                  :ARG1 (a2 / antiquity :pl +)))))
+        </pre></div></div><div class="example"><h4>center-v: arg2 as location</h4><div><span>The </span><span>larger </span><span>parallel </span><span>after </span><div class="tooltip"><span style="background-color: PALEGREEN">the earthquake</span><span class="tooltiptext">ARG1</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">centered</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">south of San Francisco</span><span class="tooltiptext">ARG2</span></div> <span>is </span><span>surely </span><span>with </span><span>the </span><span>state </span><span>of </span><span>the </span><span>U.S. </span><span>economy </span><span>.</span><br><br><pre>          (p / parallel-01
+            :ARG1 (s / state
+              :poss (e / economy
+                :mod (c / country :wiki "United_States" :name (n / name :op1 "U.S."))))
+            :ARG1-of (h / have-degree-91
+              :ARG2 (l / large)
+              :ARG3 (m / more))
+            :time (a / after
+              :op1 (e2 / earthquake-01
+                :ARG1-of (c2 / center-01
+                  :ARG1 (s2 / space
+                    :ARG1-of (s3 / south-01
+                      :ARG2 (c3 / city :wiki "San_Francisco" :name (n2 / name :op1 "San" :op2 "Francisco")))))))
+            :ARG1-of (s4 / sure-02))
+        </pre></div></div><div class="example"><h4>center-v: ARG2 and ARG1</h4><div><span>The </span><span>current </span><span>educational </span><span>mantra </span><span>is </span><span>" </span><div class="tooltip"><span style="background-color: PLUM">student</span><span class="tooltiptext">ARG2</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">centered</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PALEGREEN">learning</span><span class="tooltiptext">ARG1</span></div> <span>, </span><span>" </span><span>and </span><span>the </span><span>teacher </span><span>'s </span><span>role </span><span>is </span><span>extremely </span><span>important </span><span>.</span><br><br><pre>          (a / and
+            :op1 (l / learn-01
+              :ARG0 s
+              :ARG1-of (c / center-01
+                :ARG2 (s / student))
+              :domain (m / mantra
+                :poss (e / educate-01)
+                :time (c2 / current)))
+            :op2 (r / role
+              :ARG2-of (h / have-org-role-91
+                :ARG0 (p / person
+                  :ARG0-of (t / teach-01))
+                :ARG3 e)
+              :ARG1-of (i2 / important-01
+                :degree (e2 / extreme))))
+        </pre></div></div><div class="example"><h4>centered-j</h4><div><span>Of </span><span>course </span><span>, </span><span>undeniably </span><span>, </span><div class="tooltip"><span style="background-color: GAINSBORO">some enforcement departments</span><span class="tooltiptext">R-ARG1</span></div> <span>, </span><div class="tooltip"><span style="background-color: PALEGREEN">which</span><span class="tooltiptext">ARG1</span></div> <span>are </span><div class="tooltip"><span style="background-color: PLUM">public security bureau</span><span class="tooltiptext">ARG2</span></div> <span>- </span><div class="tooltip"><span style="background-color: LIGHTCORAL">centered</span><span class="tooltiptext">rel</span></div> <span>, </span><span>face </span><span>the </span><span>fact </span><span>that </span><span>they </span><span>have </span><span>insufficient </span><span>personnel </span><span>and </span><span>they </span><span>have </span><span>to </span><span>recruit </span><span>some </span><span>" </span><span>temporary </span><span>workers </span><span>. </span><span>"</span><br><br><pre>          (d / department
+            :ARG0-of (e / enforce-01)
+            :quant (s / some)
+            :ARG1-of (c / center-01
+              :ARG2 (b / bureau
+                :ARG0-of (s2 / secure-02
+                  :ARG1 (p / public)))))
+        </pre></div></div></div></div></div><div class="footer"><span style="color:red">Warning: Frame validation failed </span><a href="frame_errors.txt">(see errors)</a></div></div><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script><script src="script.js"></script></body></html>

@@ -1,0 +1,39 @@
+<html lang="en"><head><title>Rolesets for alias "longest"</title><link rel="stylesheet" href="style.css"></head><body><div class="wrapper"><div class="header">Aliases - longest</div><div class="headerMenu"><select id="resource" style="font-size:30px;float:left;"><option value="ALL">All Frames</option><option value="AMR_2019">AMR 2019</option><option value="PropBank_1-0">PropBank 1.0</option><option value="PropBank_2-1-5">PropBank 2.1.5</option><option value="PropBank_3-1">PropBank 3.1</option><option value="PropBank_3-4">PropBank 3.4</option><option value="PropBank_Flickr_1-0">PropBank Flickr 1.0</option></select><form autocomplete="off" method="post" name="aliasSearch" style="float:right;"><div class="autocomplete"><input id="searchAliases" name="myAlias" placeholder="Alias" type="text"></div><input type="submit" value="Search"></form><form autocomplete="off" method="post" name="rolesetSearch" style="margin:0 auto;width:300px"><div class="autocomplete"><input id="searchRolesets" name="myRoleset" placeholder="Roleset ID" type="text"></div><input type="submit" value="Go"></form></div><div class="sidebar"><div class="sticky-spacer"></div><div class="sticky-content"><a href="index.html">&#11178; Index</a></div></div><div class="content"><div class="sticky-spacer"></div><div class="sticky-content"><div class="roleset resource-dependent PropBank_3-1 PropBank_3-4 AMR_2019 PropBank_Flickr_1-0"><a id="long.03"></a><h3>long.03 - <i>have a (maybe large) length measurement</i></h3><span style="font-size:10px;">LONG NOTES: Updated for Spatial AMR to streamline the length measurement argument annotation. Frame still conflates scalar and quantitative senses. cf deep, high, wide.</span><br><span style="font-size:10px;">LONG-J NOTES: Added by Julia based on BOLT-1. Related to lengthen-v.01, elongate-v.01, prolong-v.01. (from long.01-j)</span><br><h4>Aliases:</h4><div style="padding-left: 20px;"><span>length (n.)</span><br><span>long (j.)</span><br><span>longer (j.)</span><br><span>longest (j.)</span><br></div><h4>Roles:</h4><div style="padding-left: 20px;"><span><span style="background-color:PALEGREEN">ARG1-SE1</span><span>: </span><i>long thing</i></span><br><span><span style="background-color:PLUM">ARG2-EXT</span><span>: </span><i>length measurement</i></span><br><span><span style="background-color:LIGHTSKYBLUE">ARG3-AXS</span><span>: </span><i>axis measured</i></span><br><span><span style="background-color:KHAKI">ARG4-SCL</span><span>: </span><i>scale</i></span><br></div><div class="example"><h4>long-j: arg1, EXT</h4><div><div class="tooltip"><span style="background-color: PALEGREEN">The rest of your OP</span><span class="tooltiptext">ARG1</span></div> <span>was </span><div class="tooltip"><span style="background-color: GAINSBORO">just</span><span class="tooltiptext">ARGM-ADV</span></div> <div class="tooltip"><span style="background-color: GAINSBORO">too</span><span class="tooltiptext">ARGM-EXT</span></div> <div class="tooltip"><span style="background-color: GAINSBORO">damned</span><span class="tooltiptext">ARGM-DIS</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">long</span><span class="tooltiptext">rel</span></div> <span>.</span><br><br><pre>          (h / have-degree-91
+            :ARG1 (r / rest
+              :mod (t / thing
+                :ARG1-of (p / post-01
+                  :ARG0 (y / you))
+                :mod (o / original)))
+            :ARG2 (l / long-03
+              :mod (d / damn :mode expressive))
+            :ARG3 (t2 / too)
+            :mod (j / just))
+        </pre></div></div><div class="example"><h4>long-j: both args</h4><div><div class="tooltip"><span style="background-color: PALEGREEN">The shark</span><span class="tooltiptext">ARG1</span></div> <span>was </span><div class="tooltip"><span style="background-color: PLUM">12 feet</span><span class="tooltiptext">ARG2</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">long</span><span class="tooltiptext">rel</span></div> <span>, </span><span>8 </span><span>feet </span><span>in </span><span>girth </span><span>and </span><span>weighs </span><span>more </span><span>than </span><span>1300 </span><span>pounds </span><span>, </span><div class="tooltip"><span style="background-color: GAINSBORO">according to the fishermen 's estimates</span><span class="tooltiptext">ARGM-ADV</span></div> <span>.</span><br><br><pre>          (s / say-01
+            :ARG0 (e / estimate-01
+              :ARG0 (f / fisherman))
+            :ARG1 (a / and
+              :op1 (l / long-03
+                :ARG1 (s2 / shark)
+                :ARG2 (d / distance-quantity :quant 12
+                  :unit (f2 / foot)))
+              :op2 (g / girth-03
+                :ARG1 s2
+                :ARG2 (d2 / distance-quantity :quant 8
+                  :unit (f3 / foot)))
+              :op3 (w / weigh-01
+                :ARG1 s2
+                :ARG3 (m / more-than
+                  :op (m2 / mass-quantity :quant 1300
+                    :unit (p / pound))))))
+        </pre></div></div><div class="example"><h4>long-j: with scale</h4><div><div class="tooltip"><span style="background-color: PLUM">That</span><span class="tooltiptext">ARG2</span></div> <span>'s </span><div class="tooltip"><span style="background-color: LIGHTCORAL">long</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: KHAKI">for a shark</span><span class="tooltiptext">ARG4</span></div> <span>.</span><br><br><pre>          (l / long-03
+            :ARG2 (t / that)
+            :ARG4 (s / shark))
+        </pre></div></div><div class="example"><h4>length-n: with arg3</h4><div><span>Face </span><span>along </span><span>the </span><div class="tooltip"><span style="background-color: LIGHTCORAL">length</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PALEGREEN">of the yellow staircase</span><span class="tooltiptext">ARG1</span></div> <span>.</span><br><br><pre>          (f / face-01 :mode imperative
+            :ARG0 (y / you)
+            :direction (t / trajectory
+              :ARG1-of (a / along-01
+                :ARG2 (t2 / thing
+                  :ARG3-of (l / long-03
+                    :ARG1 (s / staircase
+                      :color (y2 / yellow)))))))
+        </pre></div></div></div></div></div><div class="footer"><span style="color:red">Warning: Frame validation failed </span><a href="frame_errors.txt">(see errors)</a></div></div><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script><script src="script.js"></script></body></html>

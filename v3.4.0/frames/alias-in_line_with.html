@@ -1,0 +1,115 @@
+<html lang="en"><head><title>Rolesets for alias "in_line_with"</title><link rel="stylesheet" href="style.css"></head><body><div class="wrapper"><div class="header">Aliases - in_line_with</div><div class="headerMenu"><select id="resource" style="font-size:30px;float:left;"><option value="ALL">All Frames</option><option value="AMR_2019">AMR 2019</option><option value="PropBank_1-0">PropBank 1.0</option><option value="PropBank_2-1-5">PropBank 2.1.5</option><option value="PropBank_3-1">PropBank 3.1</option><option value="PropBank_3-4">PropBank 3.4</option><option value="PropBank_Flickr_1-0">PropBank Flickr 1.0</option></select><form autocomplete="off" method="post" name="aliasSearch" style="float:right;"><div class="autocomplete"><input id="searchAliases" name="myAlias" placeholder="Alias" type="text"></div><input type="submit" value="Search"></form><form autocomplete="off" method="post" name="rolesetSearch" style="margin:0 auto;width:300px"><div class="autocomplete"><input id="searchRolesets" name="myRoleset" placeholder="Roleset ID" type="text"></div><input type="submit" value="Go"></form></div><div class="sidebar"><div class="sticky-spacer"></div><div class="sticky-content"><a href="index.html">&#11178; Index</a></div></div><div class="content"><div class="sticky-spacer"></div><div class="sticky-content"><div class="roleset resource-dependent PropBank_1-0 PropBank_2-1-5 PropBank_3-1 PropBank_3-4 AMR_2019 PropBank_Flickr_1-0"><a id="align.01"></a><h3>align.01 - <i>(cause to) be parallel, harmonious</i></h3><span style="font-size:10px;">ALIGN NOTES: Args 3 and 4 added for SpatialAMR. They are pragmatic roles.</span><br><span style="font-size:10px;">ALIGN-V NOTES: VN updated by Julia. No Vncls. (from align.01-v)</span><br><span style="font-size:10px;">ALIGNMENT-N NOTES: Expanded by Julia based on BOLT, align.01. No VNcls. (from alignment.01-n)</span><br><span style="font-size:10px;">ALIGNED-J NOTES: Roleset based on instances in BOLT P01, parts 2,3. Framed by Claire; based on verb align.01. No Vncls. (from aligned.01-j)</span><br><h4>Aliases:</h4><div style="padding-left: 20px;"><span>align (v.)</span><br><span>alignment (n.)</span><br><span>aligned (j.)</span><br><span>line_up (v.)</span><br><span>lined_up (j.)</span><br><span>in_line (j.)</span><br><span>in_line_with (p.)</span><br></div><h4>Roles:</h4><div style="padding-left: 20px;"><span><span style="background-color:AQUAMARINE">ARG0-pag</span><span>: </span><i>agent</i></span><br><span><span style="background-color:PALEGREEN">ARG1-SE1</span><span>: </span><i>first or all things made parallel</i></span><br><span><span style="background-color:PLUM">ARG2-SE2</span><span>: </span><i>entity parallelled</i></span><br><span><span style="background-color:LIGHTSKYBLUE">ARG3-DOM</span><span>: </span><i>subject matter, domain of alignment; issue aligned on</i></span><br><span><span style="background-color:KHAKI">ARG4-AXS1</span><span>: </span><i>Arg1's parallel axis</i></span><br><span><span style="background-color:WHEAT">ARG5-AXS2</span><span>: </span><i>Arg2's parallel axis</i></span><br></div><div class="example"><h4>align-v: passive, align with</h4><div><span>`` </span><span>We </span><span>expect </span><span>near </span><span>- </span><span>term </span><span>sluggishness </span><span>in </span><span>the </span><span>electronics </span><span>market </span><span>, </span><span>'' </span><span>he </span><span>said </span><span>, </span><span>`` </span><span>and </span><span>we </span><span>will </span><span>take </span><span>ongoing </span><span>cost </span><span>- </span><span>reduction </span><span>actions </span><span>as </span><span>necessary </span><span>to </span><span>keep </span><div class="tooltip"><span style="background-color: PALEGREEN">operations</span><span class="tooltiptext">ARG1</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">aligned</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">with demand</span><span class="tooltiptext">ARG2</span></div> <span>. </span><span>''</span><br><br><pre>          (s / say-01
+            :ARG0 (h / he)
+            :ARG1 (a / and
+              :op1 (e / expect-01
+                :ARG0 (w / we)
+                :ARG1 (s2 / sluggishness
+                  :time (t / term
+                    :ARG1-of (n / near-01))
+                  :location (m / market
+                    :mod (e2 / electronics))))
+              :op2 (a2 / act-02
+                :ARG0 w
+                :ARG1 (r / reduce-01
+                  :ARG0 w
+                  :ARG1 (c / cost-01))
+                :condition (n2 / need-01
+                  :ARG1 a2)
+                :purpose (k / keep-02
+                  :ARG0 w
+                  :ARG1 (a3 / align-01
+                    :ARG2 (d / demand-01))))))
+        </pre></div></div><div class="example"><h4>align-v: ARG0 and ARG1 and ARG2</h4><div><span>But </span><span>Tan </span><span>Zhiqiang </span><span>, </span><span>himself </span><span>a </span><span>returned </span><span>alumni </span><span>, </span><span>points </span><span>out </span><span>while </span><span>it </span><span>'s </span><span>fine </span><span>having </span><span>dinner </span><span>together </span><span>, </span><span>if </span><span>it </span><span>ever </span><span>came </span><span>to </span><span>it </span><span>, </span><div class="tooltip"><span style="background-color: AQUAMARINE">none of the alumni</span><span class="tooltiptext">ARG0</span></div> <span>would </span><span>want </span><span>to </span><div class="tooltip"><span style="background-color: GAINSBORO">actively</span><span class="tooltiptext">ARGM-MNR</span></div> <span>" </span><div class="tooltip"><span style="background-color: LIGHTCORAL">align</span><span class="tooltiptext">rel</span></div> <span>" </span><div class="tooltip"><span style="background-color: PALEGREEN">themselves</span><span class="tooltiptext">ARG1</span></div> <div class="tooltip"><span style="background-color: PLUM">with Taiwan</span><span class="tooltiptext">ARG2</span></div> <span>, </span><span>given </span><span>the </span><span>pro </span><span>- </span><span>Beijing </span><span>political </span><span>climate </span><span>in </span><span>Macau </span><span>.</span><br><br><pre>          (c / contrast-01
+            :ARG2 (p / point-out-02
+              :ARG0 (p2 / person :name (n / name :op1 "Tan" :op2 "Zhiqiang")
+                :domain (a / alumnus
+                  :ARG1-of (r / return-01)
+                  :ARG1-of (i3 / include-91
+                    :ARG2 a3)))
+              :ARG1 (w / want-01 :polarity -
+                :ARG0 (a3 / alumnus :pl +)
+                :ARG1 (a2 / align-01
+                  :ARG0 a3
+                  :ARG1 a3
+                  :ARG2 (c2 / country :wiki "Taiwan" :name (n2 / name :op1 "Taiwan"))
+                  :ARG1-of (a4 / activity-06
+                    :ARG0 a3))
+                :ARG1-of (c3 / cause-01
+                  :ARG0 (c4 / climate
+                    :mod (p3 / politics)
+                    :ARG0-of (f / favor-01
+                      :ARG1 (c5 / city :wiki "Beijing" :name (n3 / name :op1 "Beijing")))
+                    :location (c6 / city :wiki "Macau" :name (n4 / name :op1 "Macau"))))
+                :condition (c7 / come-down-23
+                  :ARG1 (i2 / it)
+                  :ARG2 (i4 / it)
+                  :time (e / ever))
+                :concession (f2 / fine-04
+                  :ARG1 (d / dine-01
+                    :ARG0 (a5 / and
+                      :op1 a3
+                      :op2 c2)
+                    :manner (t / together))))))
+        </pre></div></div><div class="example"><h4>alignment-n: args 1, 2, 3</h4><div><span>McCain </span><span>double </span><span>talks </span><div class="tooltip"><span style="background-color: PALEGREEN">his</span><span class="tooltiptext">ARG1</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">alignment</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">with Bush</span><span class="tooltiptext">ARG2</span></div> <div class="tooltip"><span style="background-color: LIGHTSKYBLUE">on Iraq</span><span class="tooltiptext">ARG3</span></div> <span>.</span><br><br><pre>          (d / double-talk-01
+            :ARG0 (p / person :wiki "John_McCain" :name (n / name :op1 "McCain"))
+            :ARG1 (a / align-01
+              :ARG1 p
+              :ARG2 (p2 / person :wiki "George_W._Bush" :name (n2 / name :op1 "Bush"))
+              :ARG3 (c / country :wiki "Iraq" :name (n3 / name :op1 "Iraq"))))
+        </pre></div></div><div class="example"><h4>alignment-n: all things in arg1</h4><div><span>Notice </span><span>the </span><span>ice </span><span>cap </span><span>weight </span><span>shifting </span><span>it </span><span>is </span><span>due </span><span>to </span><span>earth </span><span>s </span><span>own </span><span>inertia </span><span>and </span><span>the </span><div class="tooltip"><span style="background-color: PALEGREEN">sun moon</span><span class="tooltiptext">ARG1</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">alignment</span><span class="tooltiptext">rel</span></div> <span>.</span><br><br><pre>          (n / notice-01 :mode imperative
+            :ARG0 (y / you)
+            :ARG1 (s / shift-01
+              :ARG1 (w / weight
+                :part-of (c / cap
+                  :consist-of (i2 / ice)))
+              :ARG1-of (c2 / cause-01
+                :ARG0 (a2 / and
+                  :op1 (i3 / inertia
+                    :poss (p / planet :name (n2 / name :op1 "Earth")))
+                  :op2 (a3 / align-01
+                    :ARG1 (s2 / sun)
+                    :ARG2 (m / moon))))))
+        </pre></div></div><div class="example"><h4>aligned-j: with degree</h4><div><span>... </span><span>replace </span><span>her </span><span>with </span><span>Kevin </span><span>Rudd </span><span>yet </span><span>again </span><div class="tooltip"><span style="background-color: PALEGREEN">who</span><span class="tooltiptext">ARG1</span></div> <span>is </span><span>extremely </span><span>pro </span><span>- </span><span>China </span><span>and </span><div class="tooltip"><span style="background-color: GAINSBORO">less</span><span class="tooltiptext">ARGM-EXT</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">aligned</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">with the United States</span><span class="tooltiptext">ARG2</span></div> <div class="tooltip"><span style="background-color: GAINSBORO">although he will probably suck up to Obama as well</span><span class="tooltiptext">ARGM-ADV</span></div> <span>.</span><br><br><pre>          (r / replace-01 :mode imperative
+            :ARG0 (y / you)
+            :ARG1 (s / she)
+            :ARG2 (p / person :wiki "Kevin_Rudd" :name (n / name :op1 "Kevin" :op2 "Rudd")
+              :ARG0-of (f / favor-01
+                :ARG1 (c / country :wiki "China" :name (n2 / name :op1 "China"))
+                :degree (e / extreme))
+              :ARG1-of (a2 / align-01
+                :ARG2 (c2 / country :wiki "United_States" :name (n3 / name :op1 "United" :op2 "States"))
+                :ARG2-of (h / have-degree-91
+                  :ARG1 p
+                  :ARG3 (l / less))
+                :concession (p2 / probable
+                  :domain (s2 / suck-up-04
+                    :ARG0 p
+                    :ARG1 (p3 / person :wiki "Barack_Obama" :name (n4 / name :op1 "Obama"))
+                    :mod (a3 / as-well)))))
+            :mod (a / again
+              :mod (y2 / yet)))
+        </pre></div></div><div class="example"><h4>align-v: All args, translation</h4><div><span>Not </span><span>very </span><span>credible </span><span>specifically </span><span>here </span><span>in </span><span>it </span><span>'s </span><span>original </span><span>form </span><span>until </span><div class="tooltip"><span style="background-color: PALEGREEN">it</span><span class="tooltiptext">ARG1</span></div> <span>was </span><div class="tooltip"><span style="background-color: LIGHTCORAL">aligned</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">with the Original Hebrew</span><span class="tooltiptext">ARG2</span></div> <div class="tooltip"><span style="background-color: AQUAMARINE">by the Masoretes later on</span><span class="tooltiptext">ARG0</span></div> <span>.</span><br><br><pre>          (h2 / have-degree-91
+            :ARG1 (i2 / it)
+            :ARG2 (c / credible)
+            :ARG3 (v / very :polarity -)
+            :condition (a / and
+              :op1 (b / be-located-at-91
+                :ARG1 i2
+                :ARG2 (h / here))
+              :op2 (f / form
+                :mod (o / original)
+                :poss i2)
+              :ARG1-of (s / specific-02))
+            :time (u / until
+              :op1 (a2 / align-01
+                :ARG0 (o3 / organization :wiki "Masoretes" :name (n2 / name :op1 "Masoretes"))
+                :ARG1 i2
+                :ARG2 (l / language :wiki "Hebrew_language" :name (n / name :op1 "Original" :op2 "Hebrew"))
+                :time (a3 / after))))
+        </pre></div></div><div class="example"><h4>line_up-v: </h4><div><div class="tooltip"><span style="background-color: LIGHTCORAL">Line</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PALEGREEN">this one</span><span class="tooltiptext">ARG1</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">up</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">with the green row</span><span class="tooltiptext">ARG2</span></div> <br><br><pre>          (a / align-01 :mode imperative
+            :ARG0 (y / you)
+            :ARG1 (o / one
+              :mod (t2 / this))
+            :ARG2 (r / row
+              :color (g / green)))
+        </pre></div></div></div></div></div><div class="footer"><span style="color:red">Warning: Frame validation failed </span><a href="frame_errors.txt">(see errors)</a></div></div><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script><script src="script.js"></script></body></html>

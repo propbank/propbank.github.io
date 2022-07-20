@@ -1,0 +1,541 @@
+slot.xml
+slot.01: some <arg> tags in example "slot-v: args 1 and 2"  contain overlapping start/end indices.
+
+commission.xml
+commission.01: <arg> "[*]" in example "all arguments"  contains invalid start/end indices.
+
+annuloplasty.xml
+annuloplasty.01: Could not decode AMR example "Args 1 and 2" -- possibly malformed.
+
+democratize.xml
+democratize.01: <arg> "[*]" in example "null-agent active"  contains invalid start/end indices.
+
+expand.xml
+expand.01: <arg> "*trace*" in example "abstract event"  contains invalid start/end indices.
+
+casual.xml
+casual.01: <arg> "you" in example "arg0"  contains invalid start/end indices.
+
+deflesh.xml
+deflesh.01: <arg> "*" in example "Transitive"  contains invalid start/end indices.
+
+bathe.xml
+bathe.01: <arg> "*PRO*" in example "Within LVC"  contains invalid start/end indices.
+
+distill.xml
+distill.01: <arg> "[*]" in example "no impurities mentioned"  contains invalid start/end indices.
+
+encircle.xml
+encircle.01: <arg> "*trace*" in example "agentive"  contains invalid start/end indices.
+
+behead.xml
+behead.01: <arg> "the Somali armed forces" in example "behead-v: now that's a lovely example"  contains invalid start/end indices.
+
+culminate.xml
+culminate.01: <arg> "[*]" in example "intransitive"  contains invalid start/end indices.
+
+dream.xml
+dream_on.03: <arg> "*trace*" in example "this really occurred"  contains invalid start/end indices.
+
+hack.xml
+hack_away.02: <arg> "*trace*" in example "hack_away-v: the one corpus example"  contains invalid start/end indices.
+
+darn.xml
+darn.01: <arg> "*" in example "repair"  contains invalid start/end indices.
+
+dogsled.xml
+dogsled.01: <arg> "*PRO*" in example "from Google"  contains invalid start/end indices.
+
+countertraction.xml
+countertraction.01: <arg> "*PRO*-2" in example "countertraction-n"  contains invalid start/end indices.
+
+defray.xml
+defray.01: <arg> "*PRO*" in example "Typical Transitive"  contains invalid start/end indices.
+
+gut.xml
+gut.01: <arg> "[*]" in example "agent as pro"  contains invalid start/end indices.
+
+gain.xml
+gain.02: <arg> "*trace*" in example "with benefactive"  contains invalid start/end indices.
+
+dissociate.xml
+dissociate.01: <arg> "[*-3]" in example "transitive"  contains invalid start/end indices.
+
+criminalize.xml
+criminalize.01: <arg> "*-2" in example "criminalise-v: args 0, 2"  contains invalid start/end indices.
+
+defang.xml
+defang.01: <arg> "*" in example "Transitive"  contains invalid start/end indices.
+
+find.xml
+find_out.03: <arg> "*trace*" in example "find_out-v: discover"  contains invalid start/end indices.
+
+complacent.xml
+complacent.01: <arg> "*PRO*" in example "arg0, REC"  contains invalid start/end indices.
+
+harden.xml
+harden.01: <arg> "*PRO*" in example "With arg 2"  contains invalid start/end indices.
+
+fap.xml
+fap_away.02: <arg> "*PRO*" in example "fap_away-v"  contains invalid start/end indices.
+
+frack.xml
+frack.01: <arg> "*PRO*" in example "verbal usage"  contains invalid start/end indices.
+
+destruct.xml
+destruct.01: <arg> "[*]" in example "unaccusative"  contains invalid start/end indices.
+
+hang.xml
+hang.12: <arg> "*PRO*" in example "hang-n: with cardinal direction"  contains invalid start/end indices.
+hang_on.04: <arg> "*PRO*" in example "hang_on-v: imperative"  contains invalid start/end indices.
+hang_on.04: <arg> "*PRO*-2" in example "hang_on-v: both args"  contains invalid start/end indices.
+hang_on.05: <arg> "*PRO*" in example "all args (imperative)"  contains invalid start/end indices.
+
+chug.xml
+chug.03: <arg> "*trace*" in example "chugga chugga"  contains invalid start/end indices.
+
+correct.xml
+correct.01: <arg> "*trace*" in example "correct-v: targetless trace"  contains invalid start/end indices.
+
+field.xml
+field.01: <arg> "questions [*ICH*-1]" in example "transitive"  contains invalid start/end indices.
+
+crucify.xml
+crucify.01: <arg> "[*-1]" in example "passive arg1"  contains invalid start/end indices.
+
+conserve.xml
+conserve.01: <arg> "[*0*]" in example "conserve-v: transitive"  contains invalid start/end indices.
+con.03: <arg> "*" in example "con-v: the one example"  contains invalid start/end indices.
+
+calcify.xml
+calcify.01: <arg> "osteoblasts" in example "calcify-v: Active, Infinitival"  contains invalid start/end indices.
+
+felicitate.xml
+felicitate.01: <arg> "*PRO*" in example "ARG0 and ARG1 and ARG2"  contains invalid start/end indices.
+
+generalize.xml
+generalize.01: <arg> "[*]" in example "generalize-v: intransitive"  contains invalid start/end indices.
+generalize.01: <arg> "[*]" in example "generalize-v: transitive"  contains invalid start/end indices.
+
+affect.xml
+effect.03: <arg> "[*-2]" in example "effect-v: perilous example"  contains invalid start/end indices.
+
+fold.xml
+fold.06: <arg> "*trace*" in example "fold-v: business as subject"  contains invalid start/end indices.
+
+filter.xml
+filter.02: <arg> in example "ARG0 and ARG1 and ARG2"  has no text contents.
+
+disarm.xml
+disarm.01: <arg> "*PRO*" in example "With Arg 2"  contains invalid start/end indices.
+
+hat.xml
+hat.01: <arg> "[*-1]" in example "passive and armed with a paper horn"  contains invalid start/end indices.
+
+fight.xml
+fight_on.03: <arg> "*trace*" in example "fight_on-v: Fighter 1"  contains invalid start/end indices.
+
+eliminate.xml
+eliminate.01: <arg> "*trace*" in example "unstated subject"  contains invalid start/end indices.
+eliminate.01: <arg> "*trace*" in example "untraceable subject"  contains invalid start/end indices.
+
+hairstyle.xml
+hairstyle.01: <arg> "*PRO*" in example "hairstyle-n"  contains invalid start/end indices.
+
+dogsit.xml
+dogsit.01: <arg> "*PRO*" in example "arg0"  contains invalid start/end indices.
+
+defuzz.xml
+defuzz.01: <arg> "*" in example "Transitive"  contains invalid start/end indices.
+
+clean.xml
+clean.04: <arg> "*PRO*" in example "clean-j: arg1"  contains invalid start/end indices.
+
+circumstantial.xml
+circumstantial.01: <arg> "*PRO*" in example "arg1"  contains invalid start/end indices.
+
+follow.xml
+follow.01: <arg> "*trace*" in example "follow-v: as temporal"  contains invalid start/end indices.
+follow_suit.06: <arg> "[*0*]" in example "follow_suit-m: monkey see, monkey do"  contains invalid start/end indices.
+follow_up.03: <arg> "*PRO*" in example "follow_up-v"  contains invalid start/end indices.
+
+diurese.xml
+diurese.01: <arg> "*PRO*" in example "With Arg0"  contains invalid start/end indices.
+
+cry.xml
+cry.01: <arg> "*trace*" in example "stupid split construction"  contains invalid start/end indices.
+cry.01: <arg> "[ The only fraud involved (PRN: cry *trace* Mr. Courter's partisans) is the Florio commercial itself]-S" in example "stupid split construction"  contains invalid start/end indices.
+cry_out.05: <arg> "*-2" in example "args 0, 1"  contains invalid start/end indices.
+
+entice.xml
+entice.01: <arg> "*trace*" in example "entice into"  contains invalid start/end indices.
+
+declare.xml
+declare.01: <arg> "*T*-1 effective" in example "When entity judged is included with judgment"  contains invalid start/end indices.
+
+foreclose.xml
+foreclose.01: <arg> "on *trace*" in example "passive"  contains invalid start/end indices.
+
+stimulate.xml
+stimulate.01: <arg> "*trace*" in example "stimulate-v: active"  contains invalid start/end indices.
+
+croon.xml
+croon.01: <arg> "*trace*" in example "transitive"  contains invalid start/end indices.
+croon.01: <arg> "The beautiful look of wool" in example "transitive"  contains invalid start/end indices.
+croon.01: <arg> "slightly Victorian in its influence" in example "transitive"  contains invalid start/end indices.
+
+guard.xml
+guard.01: <arg> "*PRO*" in example "guard-v: Big Mishaps"  contains invalid start/end indices.
+
+labor.xml
+labor.01: <arg> "*PRO*" in example "do_labor-l: Within LVC"  contains invalid start/end indices.
+
+excuse.xml
+excuse.01: <arg> "*trace*" in example "missing excused"  contains invalid start/end indices.
+
+downsize.xml
+downsize.01: <arg> "[*]" in example "arb control, arg0"  contains invalid start/end indices.
+
+cloud.xml
+cloud.01: <arg> "*trace*" in example "cloud-v: agentive, sorta"  contains invalid start/end indices.
+
+cave.xml
+cave.01: <arg> "You" in example "with CAU"  contains invalid start/end indices.
+
+disconnect.xml
+disconnect.01: <arg> "*trace*" in example "merged args 0 and 1"  contains invalid start/end indices.
+
+convoy.xml
+convoy.01: <arg> "*PRO*" in example "Light Verb"  contains invalid start/end indices.
+
+distrain.xml
+distrain.01: <arg> "*PRO*" in example "with object in PP"  contains invalid start/end indices.
+
+break.xml
+break.01: <arg> "Brooks Brothers" in example "make_break-l"  contains invalid start/end indices.
+
+epilate.xml
+epilate.01: <arg> "*PRO*" in example "epilate-v"  contains invalid start/end indices.
+
+role-reification.xml
+have-degree.92: <rel> in example  is missing text contents.
+
+crumb.xml
+crumb.01: <arg> "*PRO*" in example "All arguments"  contains invalid start/end indices.
+
+get.xml
+get.05: <arg> "*trace*" in example "get-v: metaphorical motion"  contains invalid start/end indices.
+
+exclude.xml
+exclude.01: <arg> "*trace*" in example "exclude-v: discourse function, with (empty) arg0"  contains invalid start/end indices.
+
+deescalate.xml
+deescalate.01: <arg> "[*PRO*]" in example "de-escalate the violence"  contains invalid start/end indices.
+
+guarantee.xml
+guarantee.01: <arg> "*trace*-1" in example "sentence fragment"  contains invalid start/end indices.
+
+compel.xml
+compel.01: <arg> "[*T*-2]" in example "all arguments"  contains invalid start/end indices.
+compel.01: <arg> "a subpoena" in example "all arguments"  contains invalid start/end indices.
+
+cordon.xml
+cordon.01: <arg> "*PRO*" in example "simple transitive"  contains invalid start/end indices.
+
+fester.xml
+fester.01: <arg> "[*-3]" in example "intransitive"  contains invalid start/end indices.
+
+eradicate.xml
+eradicate.01: <arg> "[*]" in example "transitive"  contains invalid start/end indices.
+
+cross.xml
+cross_over.06: <arg> "*PRO*" in example "cross_over-v"  contains invalid start/end indices.
+
+degrit.xml
+degrit.01: <arg> "*" in example "Transitive"  contains invalid start/end indices.
+
+drug.xml
+drug_up.02: <arg> "*PRO*" in example "All args"  contains invalid start/end indices.
+
+negate.xml
+negative.02: <arg> "impact of principal turnover" in example "negative-j: Both args"  contains invalid start/end indices.
+
+broaden.xml
+broad.02: <arg> "*PRO*" in example "lexical comparative"  contains invalid start/end indices.
+
+emulsify.xml
+emulsify.01: <arg> "*" in example "Transitive"  contains invalid start/end indices.
+
+clear.xml
+clear_out.05: <arg> "[*]-1 to" in example "clear_out-v: With causer and place left"  contains invalid start/end indices.
+clear_out.05: <arg> "[*]-1 out" in example "clear_out-v: with arg 1"  contains invalid start/end indices.
+
+free.xml
+free.01: <arg> "[*]" in example "free-v: prepositional Arg3"  contains invalid start/end indices.
+free_up.02: <arg> "*PRO*" in example "free_up-v: make available"  contains invalid start/end indices.
+free_up.02: <arg> "that plutonium that was um controlled for that period of time" in example "free_up-v: make available"  contains invalid start/end indices.
+
+evolve.xml
+evolve.01: <arg> "*trace*" in example "evolve-v: end state only"  contains invalid start/end indices.
+
+give.xml
+give.01: <arg> "*trace*" in example "give-v: Odd discourse-level usage"  contains invalid start/end indices.
+give_over.13: <arg> "[*T*-9]" in example "no subject"  contains invalid start/end indices.
+
+confound.xml
+confound.01: <arg> "[*]" in example "transitive, all args"  contains invalid start/end indices.
+
+claim.xml
+claim.02: <arg> "on *-1" in example "With CAU"  contains invalid start/end indices.
+claim.02: <arg> "[*T*-2]" in example "With CAU"  contains invalid start/end indices.
+claim.02: <arg> "[*T*-1]" in example "A more straight-forward example of arg1 and CAU in a similar usage"  contains invalid start/end indices.
+
+destress.xml
+destress.01: <arg> "*" in example "ARG1 mentioned"  contains invalid start/end indices.
+
+corrode.xml
+corrode.01: <arg> "*-1" in example "All args"  contains invalid start/end indices.
+
+flush.xml
+flush.01: <arg> "*trace*" in example "flush_out-v of"  contains invalid start/end indices.
+
+expense.xml
+expense.01: <arg> "*PRO*" in example "args 0, 1, 3"  contains invalid start/end indices.
+
+caress.xml
+caress.01: <arg> "where" in example "oddly intransitive"  contains invalid start/end indices.
+
+evacuate.xml
+evacuate.01: <arg> "[*-2]" in example "just people"  contains invalid start/end indices.
+
+emplace.xml
+emplace.01: <arg> "*PRO*" in example "look out"  contains invalid start/end indices.
+
+distinguish.xml
+distinguish.01: <arg> "*PRO*" in example "distinction-n: all args; within LVC"  contains invalid start/end indices.
+
+capacitate.xml
+capacitate.01: <arg> "Our" in example "Transitive"  contains invalid start/end indices.
+
+harvest.xml
+harvest.01: <arg> "[*T*-2]" in example "harvest-v: transitive"  contains invalid start/end indices.
+
+discolor.xml
+discolor.01: <arg> "one of her arms" in example "one example should be enough"  contains invalid start/end indices.
+discolor.01: <arg> "[*-5] bluish" in example "one example should be enough"  contains invalid start/end indices.
+
+craze.xml
+craze.01: <arg> "[*-1]" in example "craze-v: passive, arg0 and arg1"  contains invalid start/end indices.
+
+comprise.xml
+comprise.01: <arg> "[*-1]" in example "passive"  contains invalid start/end indices.
+
+dig.xml
+dig.01: <arg> "who" in example "dig for"  contains invalid start/end indices.
+dig.01: <arg> "for [*RNR*]-1" in example "dig for"  contains invalid start/end indices.
+
+cosign.xml
+cosign.01: <arg> "*PRO*" in example "one more with cosigner as subject - be careful"  contains invalid start/end indices.
+
+granulate.xml
+granulate.01: <arg> "*PRO*" in example "Usual use"  contains invalid start/end indices.
+granulate.01: <arg> "*" in example "All args"  contains invalid start/end indices.
+
+daily.xml
+daily.01: <arg> "*PRO*" in example "arg1"  contains invalid start/end indices.
+
+cohere.xml
+cohere.01: <arg> "*PRO*" in example "arg1"  contains invalid start/end indices.
+
+evidence.xml
+evidence.01: <arg> "*trace*" in example "untraceable"  contains invalid start/end indices.
+evidence.01: <arg> "*trace*" in example "more obviously verbal"  contains invalid start/end indices.
+
+figure.xml
+figure.06: <arg> "*PRO*" in example "Discoursey"  contains invalid start/end indices.
+
+have.xml
+have.08: <arg> "*PRO*" in example "Standard usage"  contains invalid start/end indices.
+have.09: <arg> "*PRO*" in example "all args"  contains invalid start/end indices.
+
+exterminate.xml
+exterminate.01: <arg> "*" in example "no instrument"  contains invalid start/end indices.
+
+core.xml
+core_out.03: <arg> "*" in example "core_out-v: with Arg1"  contains invalid start/end indices.
+
+drape.xml
+drape.01: <arg> "*trace*" in example "patriotism"  contains invalid start/end indices.
+
+collect.xml
+collect.01: <arg> "data *ICH*-1" in example "with arg2"  contains invalid start/end indices.
+
+do.xml
+do_away.05: <arg> "with [*-1]" in example "do_away-v: automatically generated"  contains invalid start/end indices.
+have_to_do_with.04: <arg> "Mary 's supercritical attitude toward Byron" in example "have_to_do-m: supercritical"  contains invalid start/end indices.
+have_to_do_with.04: <arg> "[*T*-1]" in example "have_to_do-m: supercritical"  contains invalid start/end indices.
+
+frown.xml
+frown.02: <arg> "upon *trace*" in example "for shame!"  contains invalid start/end indices.
+
+go.xml
+go_over.30: <arg> "*-1" in example "go_over-v: with MNR"  contains invalid start/end indices.
+go_down.27: <arg> "[*-1]" in example "go_down-v: from BOLT"  contains invalid start/end indices.
+
+choose.xml
+choose.01: <arg> "*PRO*-1" in example "choose-v: where the thing chosen is an S-node"  contains invalid start/end indices.
+choose.01: <arg> "to be a bride of Christ" in example "choose-v: where the thing chosen is an S-node"  contains invalid start/end indices.
+choose.01: <arg> "*PRO*" in example "choice-n: Arg 0, within LVC"  contains invalid start/end indices.
+
+firm.xml
+firm_up.02: <arg> "*trace*" in example "transitive"  contains invalid start/end indices.
+
+gazump.xml
+gazump.01: <arg> "we" in example "args 1, 2"  contains invalid start/end indices.
+gazump.01: <arg> "on *T*-2" in example "args 1, 2"  contains invalid start/end indices.
+
+deflea.xml
+deflea.01: <arg> "*" in example "Transitive"  contains invalid start/end indices.
+
+fence.xml
+fence_off.01: <arg> "*" in example "no agent"  contains invalid start/end indices.
+
+precious.xml
+precious.02: some <arg> tags in example "precious-j: both args"  contain overlapping start/end indices.
+
+dislodge.xml
+dislodge.01: <arg> "[*-2]" in example "transitive, arg0 and arg1"  contains invalid start/end indices.
+
+deregulate.xml
+deregulate.01: <arg> "*trace*" in example "unstated agent"  contains invalid start/end indices.
+
+bundle.xml
+bundle_up.03: <arg> "You" in example "necessity"  contains invalid start/end indices.
+
+dynamic.xml
+dynamic.01: <arg> "*PRO*" in example "arg1"  contains invalid start/end indices.
+
+debowel.xml
+debowel.01: <arg> "*" in example "Transitive"  contains invalid start/end indices.
+
+fart.xml
+fart.01: <arg> "*" in example "intransitive"  contains invalid start/end indices.
+
+extinguish.xml
+extinguish.01: <arg> "*PRO*" in example "with source"  contains invalid start/end indices.
+
+finetune.xml
+finetune.01: <arg> "[*-2]" in example "gerund"  contains invalid start/end indices.
+
+crusade.xml
+crusade.01: <arg> "to [*-1]" in example "With Destination"  contains invalid start/end indices.
+
+harm.xml
+harm.01: <arg> "[*PRO*]-1" in example "this often occurs with light verbs"  contains invalid start/end indices.
+
+dominate.xml
+dominate.01: <arg> "*trace*" in example "doninate-v: active"  contains invalid start/end indices.
+
+denude.xml
+denude.01: <arg> "[*-2]" in example "just transitive"  contains invalid start/end indices.
+
+duplicate.xml
+duplicate.01: <arg> "*trace*" in example "just transitive"  contains invalid start/end indices.
+
+extort.xml
+extort.01: <arg> "*trace*" in example "intransitive"  contains invalid start/end indices.
+
+fill.xml
+fill_out.04: <arg> "[*-2]" in example "fill_out-v: collect a full set"  contains invalid start/end indices.
+full.10: <arg> "*PRO*" in example "full-j: both args"  contains invalid start/end indices.
+
+end.xml
+end.01: Example "end-v: ergative"  contains duplicate ARG1s.
+
+ferment.xml
+ferment.01: <arg> "[*-43]" in example "passive, no Agent"  contains invalid start/end indices.
+
+graze.xml
+graze.01: <arg> "[*T*-1]" in example "graze-v: basic transitive"  contains invalid start/end indices.
+graze.01: <arg> "on soil that was naturally infected with anthrax spores" in example "graze-v: basic transitive"  contains invalid start/end indices.
+
+deduce.xml
+deduce.01: <arg> "*PRO*" in example "Hume's Guillotine"  contains invalid start/end indices.
+
+cohost.xml
+cohost.01: <arg> "[*-2]" in example "Both args"  contains invalid start/end indices.
+
+commence.xml
+commence.01: <arg> "*trace*" in example "from the corpus"  contains invalid start/end indices.
+
+gauge.xml
+gauge.01: <arg> "*trace*" in example "not a good example"  contains invalid start/end indices.
+
+govern.xml
+govern.01: <arg> "[*-2]" in example "passive"  contains invalid start/end indices.
+
+guide.xml
+guide.01: <arg> "[*]-1" in example "guide in"  contains invalid start/end indices.
+guide.01: <arg> "on [*T*-2]" in example "with signpost, map"  contains invalid start/end indices.
+
+characterize.xml
+characterize.01: <arg> "[*T*]" in example "characterize-v: lacking attribute"  contains invalid start/end indices.
+
+commercialize.xml
+commercialize.01: <arg> "[*-2]" in example "commercialize-v: with instrument"  contains invalid start/end indices.
+
+care.xml
+care.01: <arg> "I" in example "idc-v; abbreviated"  contains invalid start/end indices.
+
+gouge.xml
+gouge.01: <arg> "[*-2]" in example "adessive"  contains invalid start/end indices.
+
+dress.xml
+dress.01: <arg> "*PRO*" in example "LVC"  contains invalid start/end indices.
+
+compulsory.xml
+compulsory.01: <arg> "*T*" in example "compulsory-j"  contains invalid start/end indices.
+
+sniff.xml
+sniff_out.03: <arg> "they" in example "sniff_out-v: seek and destroy"  contains invalid start/end indices.
+
+defog.xml
+defog.01: <arg> "*" in example "Transitive"  contains invalid start/end indices.
+
+click.xml
+click.02: <arg> "with *-1" in example "both args"  contains invalid start/end indices.
+
+depend.xml
+depend.01: <arg> "*trace*" in example "discourse-level event"  contains invalid start/end indices.
+
+depigment.xml
+depigment.01: <arg> "*PRO*" in example "depigment-v"  contains invalid start/end indices.
+
+educate.xml
+educate.01: <arg> "*PRO*" in example "educated-j"  contains invalid start/end indices.
+
+focus.xml
+focus.01: <arg> "*trace*" in example "focus-v: unstated target of focus"  contains invalid start/end indices.
+
+discourage.xml
+discourage.01: <arg> "[*]" in example "arbitrary subject"  contains invalid start/end indices.
+
+defund.xml
+defund.01: <arg> "*PRO*" in example "args 0, 1"  contains invalid start/end indices.
+
+galvanize.xml
+galvanize.02: <arg> "*trace*" in example "Newton was right!"  contains invalid start/end indices.
+galvanize.03: <arg> "*trace*" in example "industrial applications are scarce"  contains invalid start/end indices.
+
+dungeonmaster.xml
+dungeonmaster.01: <arg> "*PRO*" in example "dungeonmaster-v"  contains invalid start/end indices.
+
+census.xml
+census.01: <arg> "*PRO*" in example "Light verb: do"  contains invalid start/end indices.
+
+emergency.xml
+emergency.01: <arg> "*trace*" in example "have_emergency-l"  contains invalid start/end indices.
+
+deepen.xml
+deepen.01: <arg> "*trace*" in example "deepen-v: pro-agentive"  contains invalid start/end indices.
+

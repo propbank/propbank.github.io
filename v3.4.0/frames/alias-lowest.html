@@ -1,0 +1,63 @@
+<html lang="en"><head><title>Rolesets for alias "lowest"</title><link rel="stylesheet" href="style.css"></head><body><div class="wrapper"><div class="header">Aliases - lowest</div><div class="headerMenu"><select id="resource" style="font-size:30px;float:left;"><option value="ALL">All Frames</option><option value="AMR_2019">AMR 2019</option><option value="PropBank_1-0">PropBank 1.0</option><option value="PropBank_2-1-5">PropBank 2.1.5</option><option value="PropBank_3-1">PropBank 3.1</option><option value="PropBank_3-4">PropBank 3.4</option><option value="PropBank_Flickr_1-0">PropBank Flickr 1.0</option></select><form autocomplete="off" method="post" name="aliasSearch" style="float:right;"><div class="autocomplete"><input id="searchAliases" name="myAlias" placeholder="Alias" type="text"></div><input type="submit" value="Search"></form><form autocomplete="off" method="post" name="rolesetSearch" style="margin:0 auto;width:300px"><div class="autocomplete"><input id="searchRolesets" name="myRoleset" placeholder="Roleset ID" type="text"></div><input type="submit" value="Go"></form></div><div class="sidebar"><div class="sticky-spacer"></div><div class="sticky-content"><a href="index.html">&#11178; Index</a></div></div><div class="content"><div class="sticky-spacer"></div><div class="sticky-content"><div class="roleset resource-dependent PropBank_3-1 PropBank_3-4 AMR_2019 PropBank_Flickr_1-0"><a id="low.04"></a><h3>low.04 - <i>have a location towards the bottom of a framework</i></h3><span style="font-size:10px;">LOW NOTES: Updated for SpatialAMR. Args 4-6 added. </span><br><span style="font-size:10px;">LOW-J NOTES: Added by Julia based on BOLT-1, comparison to high.01. Corresponds somewhat to lower-v.01. (from low.01-j)</span><br><span style="font-size:10px;">LOWER-J NOTES: Automatically created by Julia as an alias file for unification. (from lower.01-j)</span><br><h4>Aliases:</h4><div style="padding-left: 20px;"><span>low (j.)</span><br><span>lower (j.)</span><br><span>lowest (j.)</span><br></div><h4>Roles:</h4><div style="padding-left: 20px;"><span><span style="background-color:PALEGREEN">ARG1-SE1</span><span>: </span><i>low thing</i></span><br><span><span style="background-color:PLUM">ARG2-LOC</span><span>: </span><i>the lower portion of what, domain</i></span><br><span><span style="background-color:LIGHTSKYBLUE">ARG3-EXT</span><span>: </span><i>measurment</i></span><br><span><span style="background-color:KHAKI">ARG4-AXS</span><span>: </span><i>axis</i></span><br><span><span style="background-color:WHEAT">ARG5-SCL</span><span>: </span><i>scale</i></span><br><span><span style="background-color:PINK">ARG6-ANC</span><span>: </span><i>anchor</i></span><br></div><div class="example"><h4>low-j: both args</h4><div><div class="tooltip"><span style="background-color: PALEGREEN">It</span><span class="tooltiptext">ARG1</span></div> <span>is </span><div class="tooltip"><span style="background-color: LIGHTCORAL">low</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">in altitude</span><span class="tooltiptext">ARG2</span></div> <div class="tooltip"><span style="background-color: GAINSBORO">compared to the rest of the mountain</span><span class="tooltiptext">ARGM-ADV</span></div> <span>, </span><div class="tooltip"><span style="background-color: GAINSBORO">being only 1200 m above sea level</span><span class="tooltiptext">ARGM-ADV</span></div> <span>.</span><br><br><pre>          (l / low-04
+            :ARG1 (i2 / it)
+            :ARG2 (a / altitude)
+            :ARG1-of (c / compare-01
+              :ARG2 (r / rest
+                :part-of (m / mountain)))
+            :ARG1-of (c2 / cause-01
+              :ARG0 (a2 / above-01
+                :ARG1 i2
+                :ARG2 (l2 / level
+                  :mod (s / sea))
+                :quant (d / distance-quantity :quant 1200
+                  :unit (m2 / meter))
+                :mod (o / only))))
+        </pre></div></div><div class="example"><h4>low-j: both args</h4><div><span>Feinberg </span><span>et </span><span>al </span><span>. </span><span>[ </span><span>27 </span><span>] </span><span>found </span><span>that </span><span>raising </span><span>and </span><span>lowering </span><span>the </span><span>pitch </span><span>of </span><span>female </span><span>voices </span><span>by </span><span>20 </span><span>Hz </span><span>had </span><span>a </span><span>stronger </span><span>effect </span><span>on </span><span>voices </span><div class="tooltip"><span style="background-color: PALEGREEN">that</span><span class="tooltiptext">ARG1</span></div> <span>were </span><div class="tooltip"><span style="background-color: LIGHTCORAL">low</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">in pitch</span><span class="tooltiptext">ARG2</span></div> <div class="tooltip"><span style="background-color: GAINSBORO">before being manipulated</span><span class="tooltiptext">ARGM-TMP</span></div> <span>than </span><span>on </span><span>voices </span><span>that </span><span>were </span><span>average </span><span>- </span><span>pitched </span><span>or </span><span>high </span><span>- </span><span>pitched </span><span>before </span><span>manipulation </span><span>.</span><br><br><pre>          (f / find-01
+            :ARG0 (a / and
+              :op1 (p / person :name (n / name :op1 "Feinberg"))
+              :op2 (p2 / person :pl +
+                :ARG1-of (o / other-01
+                  :ARG2 p)))
+            :ARG1 (a2 / affect-01
+              :ARG0 (a3 / and
+                :op1 (r / raise-01
+                  :ARG1 (t / thing
+                    :ARG2-of (p3 / pitch-02
+                      :ARG1 (v / voice
+                        :mod (f2 / female))))
+                  :ARG2 (f3 / frequency-quantity :quant 20
+                    :unit (h / herz)))
+                :op2 (l / lower-05
+                  :ARG1 t
+                  :ARG2 f3))
+              :ARG1 (v2 / voice :pl +
+                :ARG1-of (i2 / include-91
+                  :ARG2 v)
+                :ARG1-of (l2 / low-04
+                  :ARG2 (p4 / pitch-02)
+                  :time (b / before
+                    :op1 (m2 / manipulate-01
+                      :ARG1 v2))))
+              :ARG1-of (h2 / have-degree-91
+                :ARG2 (s / strong-02)
+                :ARG3 (m / more)
+                :ARG4 (a4 / affect-01
+                  :ARG0 a3
+                  :ARG1 (v3 / voice :pl +
+                    :ARG1-of (i3 / include-91
+                      :ARG2 v)
+                    :ARG1-of (p5 / pitch-02
+                      :ARG2 (o2 / or
+                        :op1 (t3 / thing
+                          :ARG1-of (a5 / average-01))
+                        :op2 (t4 / thing
+                          :ARG1-of (h3 / high-02)))
+                      :time (b2 / before
+                        :op1 (m3 / manipulate-01
+                          :ARG1 v3))))))))
+        </pre></div></div><div class="example"><h4>low-j: both args</h4><div><div class="tooltip"><span style="background-color: PALEGREEN">The water level</span><span class="tooltiptext">ARG1</span></div> <span>is </span><div class="tooltip"><span style="background-color: LIGHTCORAL">low</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: WHEAT">for a June measurement</span><span class="tooltiptext">ARG5</span></div> <br><br><pre>          (l / low-04
+            :ARG1 (l2 / level
+              :mod (w / water))
+            :ARG5 (m / measure-01
+              :time (d / date-entity :month 6)))
+        </pre></div></div></div></div></div><div class="footer"><span style="color:red">Warning: Frame validation failed </span><a href="frame_errors.txt">(see errors)</a></div></div><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script><script src="script.js"></script></body></html>

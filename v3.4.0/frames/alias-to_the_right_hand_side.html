@@ -1,0 +1,35 @@
+<html lang="en"><head><title>Rolesets for alias "to_the_right_hand_side"</title><link rel="stylesheet" href="style.css"></head><body><div class="wrapper"><div class="header">Aliases - to_the_right_hand_side</div><div class="headerMenu"><select id="resource" style="font-size:30px;float:left;"><option value="ALL">All Frames</option><option value="AMR_2019">AMR 2019</option><option value="PropBank_1-0">PropBank 1.0</option><option value="PropBank_2-1-5">PropBank 2.1.5</option><option value="PropBank_3-1">PropBank 3.1</option><option value="PropBank_3-4">PropBank 3.4</option><option value="PropBank_Flickr_1-0">PropBank Flickr 1.0</option></select><form autocomplete="off" method="post" name="aliasSearch" style="float:right;"><div class="autocomplete"><input id="searchAliases" name="myAlias" placeholder="Alias" type="text"></div><input type="submit" value="Search"></form><form autocomplete="off" method="post" name="rolesetSearch" style="margin:0 auto;width:300px"><div class="autocomplete"><input id="searchRolesets" name="myRoleset" placeholder="Roleset ID" type="text"></div><input type="submit" value="Go"></form></div><div class="sidebar"><div class="sticky-spacer"></div><div class="sticky-content"><a href="index.html">&#11178; Index</a></div></div><div class="content"><div class="sticky-spacer"></div><div class="sticky-content"><div class="roleset resource-dependent PropBank_3-1 PropBank_3-4 AMR_2019 PropBank_Flickr_1-0"><a id="right.04"></a><h3>right.04 - <i>be located next to the right side</i></h3><span style="font-size:10px;">RIGHT NOTES: Expanded for SpatialAMR.</span><br><span style="font-size:10px;">RIGHT-J NOTES: Based on Thyme and Sharp data. No comparison. No VN or FN classes. Framed by Katie. (from right.04-j)</span><br><h4>Aliases:</h4><div style="padding-left: 20px;"><span>right (n.)</span><br><span>right (j.)</span><br><span>right (r.)</span><br><span>right_of (p.)</span><br><span>on_the_right (r.)</span><br><span>on_the_right_side (r.)</span><br><span>on_the_right_hand_side (r.)</span><br><span>to_the_right (r.)</span><br><span>to_the_right_side (r.)</span><br><span>to_the_right_hand_side (r.)</span><br><span>rightward (r.)</span><br><span>on_the_right_of (p.)</span><br><span>on_the_right_side_of (p.)</span><br><span>on_the_right_hand_side_of (p.)</span><br><span>to_the_right_of (p.)</span><br><span>to_the_right_side_of (p.)</span><br><span>to_the_right_hand_side_of (p.)</span><br></div><h4>Roles:</h4><div style="padding-left: 20px;"><span><span style="background-color:PALEGREEN">ARG1-SE1</span><span>: </span><i>theme, entity located on the right</i></span><br><span><span style="background-color:PLUM">ARG2-SE2</span><span>: </span><i>to the right of</i></span><br><span><span style="background-color:LIGHTSKYBLUE">ARG3-ANC</span><span>: </span><i>anchor</i></span><br><span><span style="background-color:KHAKI">ARG4-AXS</span><span>: </span><i>axis</i></span><br></div><div class="example"><h4>to_the_right_of-p</h4><div><span>so </span><span>we </span><span>are </span><span>going </span><div class="tooltip"><span style="background-color: LIGHTCORAL">to</span><span class="tooltiptext">rel</span></div> <span>need </span><span>blue </span><span>placeholders </span><span>to </span><div class="tooltip"><span style="background-color: LIGHTCORAL">the</span><span class="tooltiptext">rel</span></div> <span>left </span><span>and </span><div class="tooltip"><span style="background-color: LIGHTCORAL">right</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">of</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">the base block</span><span class="tooltiptext">ARG2</span></div> <br><br><pre>          (n / need-01
+            :ARG0 (w / we)
+            :ARG1 (t / thing :pl +
+              :ARG0-of (h / hold-01
+                :ARG1 (p / place))
+              :color (b / blue)
+              :location (a / and
+                :op1 (s / space
+                  :ARG1-of (l / left-20
+                    :ARG2 (b2 / block
+                      :ARG1-of (b3 / base-03
+                      :ARG3 (c / cartesian-framework-91
+                        :ARG1 (b4 / build-space))))
+                    :ARG3 (c2 / cartesian-framework-91
+                      :ARG1 (b5 / builder))))
+                :op2 (s2 / space
+                  :ARG1-of (r / right-04
+                    :ARG2 b2
+                    :ARG3 c2)))))
+        </pre></div></div><div class="example"><h4>right-n</h4><div><span>no </span><span>, </span><div class="tooltip"><span style="background-color: LIGHTSKYBLUE">my</span><span class="tooltiptext">ARG3</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">right</span><span class="tooltiptext">rel</span></div> <br><br><pre>          (a / and
+            :op1 (c / confirm :polarity -)
+            :op2 (r / right-04
+              :ARG3 (c2 / cartesian-framework-91
+                :ARG1 (i / i)
+                :FR (i2 / intrinsic))))
+        </pre></div></div><div class="example"><h4>right-r</h4><div><span>I </span><span>should </span><span>have </span><span>turned </span><div class="tooltip"><span style="background-color: LIGHTCORAL">right</span><span class="tooltiptext">rel</span></div> <span>at </span><span>Albuquerque </span><span>.</span><br><br><pre>          (o / obligate-01
+            :ARG1 (t / turn-01
+              :ARG0 (i / i)
+              :direction (t2 / trajectory
+                :ARG4-of (r / right-04
+                  :ARG3 (c / cartesian-framework-91
+                    :ARG1 i
+                    :FR (i2 / intrinsic))))
+              :location (c2 / city :name (n / name :op1 "Albuquerque"))))
+        </pre></div></div><div class="example"><h4>right_of-p: Both args</h4><div><div class="tooltip"><span style="background-color: PALEGREEN">Ostomy site</span><span class="tooltiptext">ARG1</span></div> <span>is </span><div class="tooltip"><span style="background-color: LIGHTCORAL">right</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">of midline</span><span class="tooltiptext">ARG2</span></div> </div></div></div></div></div><div class="footer"><span style="color:red">Warning: Frame validation failed </span><a href="frame_errors.txt">(see errors)</a></div></div><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script><script src="script.js"></script></body></html>

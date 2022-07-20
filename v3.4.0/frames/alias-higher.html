@@ -1,0 +1,38 @@
+<html lang="en"><head><title>Rolesets for alias "higher"</title><link rel="stylesheet" href="style.css"></head><body><div class="wrapper"><div class="header">Aliases - higher</div><div class="headerMenu"><select id="resource" style="font-size:30px;float:left;"><option value="ALL">All Frames</option><option value="AMR_2019">AMR 2019</option><option value="PropBank_1-0">PropBank 1.0</option><option value="PropBank_2-1-5">PropBank 2.1.5</option><option value="PropBank_3-1">PropBank 3.1</option><option value="PropBank_3-4">PropBank 3.4</option><option value="PropBank_Flickr_1-0">PropBank Flickr 1.0</option></select><form autocomplete="off" method="post" name="aliasSearch" style="float:right;"><div class="autocomplete"><input id="searchAliases" name="myAlias" placeholder="Alias" type="text"></div><input type="submit" value="Search"></form><form autocomplete="off" method="post" name="rolesetSearch" style="margin:0 auto;width:300px"><div class="autocomplete"><input id="searchRolesets" name="myRoleset" placeholder="Roleset ID" type="text"></div><input type="submit" value="Go"></form></div><div class="sidebar"><div class="sticky-spacer"></div><div class="sticky-content"><a href="index.html">&#11178; Index</a></div></div><div class="content"><div class="sticky-spacer"></div><div class="sticky-content"><div class="roleset resource-dependent PropBank_3-1 PropBank_3-4 AMR_2019 PropBank_Flickr_1-0"><a id="high.02"></a><h3>high.02 - <i>location: Arg1 is located (probably far) upward within a substance/space</i></h3><span style="font-size:10px;">HIGH NOTES: Updated for Spatial AMR; This roleset was split (--&gt; high.05) to accommodate the difference between location and dimension-measurement senses.</span><br><span style="font-size:10px;">HIGH-J NOTES: Added by Julia based on BOLT-1, corresponds somewhat to heighten-v.01. (from high.01-j)</span><br><span style="font-size:10px;">HIGHER-J NOTES: Automatically created by Julia as an alias file for unification. (from higher.01-j)</span><br><h4>Aliases:</h4><div style="padding-left: 20px;"><span>high (j.)</span><br><span>higher (j.)</span><br><span>height (n.)</span><br></div><h4>Roles:</h4><div style="padding-left: 20px;"><span><span style="background-color:PALEGREEN">ARG1-SE1</span><span>: </span><i>thing located up high</i></span><br><span><span style="background-color:PLUM">ARG2-LOC</span><span>: </span><i>high in what substance/space/domain</i></span><br><span><span style="background-color:LIGHTSKYBLUE">ARG3-EXT</span><span>: </span><i>height measurement</i></span><br><span><span style="background-color:KHAKI">ARG4-SCL</span><span>: </span><i>scale</i></span><br><span><span style="background-color:WHEAT">ARG5-AXS</span><span>: </span><i>axis</i></span><br><span><span style="background-color:PINK">ARG6-ANC</span><span>: </span><i>anchor</i></span><br></div><div class="example"><h4>height-n</h4><div><span>The </span><span>airplane </span><span>is </span><span>at </span><span>a </span><div class="tooltip"><span style="background-color: LIGHTCORAL">height</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">of 30,000 ft</span><span class="tooltiptext">ARG2</span></div> <span>.</span><br><br><pre>            (h / high-02
+               :ARG1 (a / airplane)
+               :ARG3 (d / distance-quantity :quant 30000
+                  :unit (f / foot)))
+            </pre></div></div><div class="example"><h4>high-j: arg1</h4><div><span>This </span><span>manifests </span><span>into </span><span>the </span><span>devastation </span><span>we </span><span>often </span><span>see </span><div class="tooltip"><span style="background-color: GAINSBORO">in neighborhoods</span><span class="tooltiptext">ARGM-LOC</span></div> <span>, </span><div class="tooltip"><span style="background-color: GAINSBORO">where</span><span class="tooltiptext">R-ARGM-LOC</span></div> <div class="tooltip"><span style="background-color: PALEGREEN">the poverty rate</span><span class="tooltiptext">ARG1</span></div> <span>is </span><div class="tooltip"><span style="background-color: LIGHTCORAL">high</span><span class="tooltiptext">rel</span></div> <span>.</span><br><br><pre>          (m / manifest-01
+            :ARG1 (t / this)
+            :ARG3 (d / devastate-01
+              :ARG1-of (s / see-01
+                :ARG0 (w / we)
+                :frequency (o / often))
+              :location (n / neighborhood :pl +
+                :location-of (h / high-02
+                  :ARG1 (r / rate
+                    :mod (p / poverty))))))
+        </pre></div></div><div class="example"><h4>high-j: wide range of arg2s</h4><div><div class="tooltip"><span style="background-color: PALEGREEN">Orchid Beach penthouse</span><span class="tooltiptext">ARG1</span></div> <span>is </span><div class="tooltip"><span style="background-color: LIGHTCORAL">high</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: PLUM">in altitude , price and glamour</span><span class="tooltiptext">ARG2</span></div> <br><br><pre>          (h / high-02
+              :ARG1 (b / building :name (n / name :op1 "Orchid" :op2 "Beach" :op3 "penthouse"))
+              :ARG2 (a / and
+                :op1 (a2 / altitude)
+                :op2 (p / price-01)
+                :op3 (g / glamour)))
+        </pre></div></div><div class="example"><h4>higher-j: argMs, lexicalized comparative alias</h4><div><span>The </span><span>reason </span><span>specific </span><span>ethnic </span><span>groups </span><span>are </span><span>targeted </span><span>for </span><span>trying </span><span>to </span><span>reduce </span><span>crime </span><span>is </span><span>because </span><span>, </span><div class="tooltip"><span style="background-color: GAINSBORO">for whatever reason</span><span class="tooltiptext">ARGM-CAU</span></div> <span>, </span><div class="tooltip"><span style="background-color: PALEGREEN">crime overall</span><span class="tooltiptext">ARG1</span></div> <span>is </span><div class="tooltip"><span style="background-color: GAINSBORO">often</span><span class="tooltiptext">ARGM-TMP</span></div> <div class="tooltip"><span style="background-color: LIGHTCORAL">higher</span><span class="tooltiptext">rel</span></div> <div class="tooltip"><span style="background-color: GAINSBORO">statistically</span><span class="tooltiptext">ARGM-ADV</span></div> <div class="tooltip"><span style="background-color: GAINSBORO">in these groups</span><span class="tooltiptext">ARGM-LOC</span></div> <span>.</span><br><br><pre>          (c / cause-01
+              :ARG0 (h / have-degree-91
+                :ARG1 c2
+                :ARG2 (h2 / high-02
+                    :mod (s2 / statistics)
+                    :frequency (o2 / often))
+                :ARG3 (m / more)
+                :ARG1-of (c4 / cause-01
+                    :ARG0 (w / whatever)))
+              :ARG1 (t / target-01
+                :ARG1 (e / ethnic-group :pl +
+                    :ARG2-of (s / specific-02))
+                :ARG2 (t2 / try-01
+                    :ARG1 (r / reduce-01
+                      :ARG1 (c2 / crime-02
+                          :mod e
+                          :mod (o3 / overall))))))
+        </pre></div></div></div></div></div><div class="footer"><span style="color:red">Warning: Frame validation failed </span><a href="frame_errors.txt">(see errors)</a></div></div><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script><script src="script.js"></script></body></html>
